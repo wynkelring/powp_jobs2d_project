@@ -28,7 +28,8 @@ public class LineDrawerAdapter implements Job2dDriver {
         line.setStartCoordinates(this.startX, this.startY);
         line.setEndCoordinates(x, y);
         this.setPosition(x, y);
-        DrawerFeature.getDrawerController().drawLine(line);
+        DrawerFeature df = new DrawerFeature();
+        df.getDrawerController().drawLine(line);
     }
 
     @Override

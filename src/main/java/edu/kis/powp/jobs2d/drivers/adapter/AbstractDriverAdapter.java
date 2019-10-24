@@ -9,8 +9,6 @@ import java.awt.*;
 
 public class AbstractDriverAdapter extends AbstractDriver {
 
-    private int startX = 0, startY = 0;
-
     public AbstractDriverAdapter() {
         super(0, 0);
     }
