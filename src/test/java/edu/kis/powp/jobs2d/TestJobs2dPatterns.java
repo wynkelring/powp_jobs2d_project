@@ -34,12 +34,18 @@ public class TestJobs2dPatterns {
 				DriverFeature.getDriverManager());
 		SelectTestCommandCircleOptionListener selectTestCommandcircleOptionListener = new SelectTestCommandCircleOptionListener(
 				DriverFeature.getDriverManager());
+		SelectTestCommandFiguresJoe1OptionListener selectTestCommandFiguresJoe1OptionListener = new SelectTestCommandFiguresJoe1OptionListener(
+				DriverFeature.getDriverManager());
+		SelectTestCommandFiguresJoe2OptionListener selectTestCommandFiguresJoe2OptionListener = new SelectTestCommandFiguresJoe2OptionListener(
+				DriverFeature.getDriverManager());
 
 		application.addTest("Figure Joe 1", selectTestFigureOptionListener);
 		application.addTest("Figure Joe 2", selectTestFigureOptionListener2);
 		application.addTest("Figure Jane", selectTestFigureJaneOptionListener);
 		application.addTest("Command Rect", selectTestCommandRectOptionListener);
 		application.addTest("Command Circle", selectTestCommandcircleOptionListener);
+		application.addTest("Command Joe 1", selectTestCommandFiguresJoe1OptionListener);
+		application.addTest("Command Joe 2", selectTestCommandFiguresJoe2OptionListener);
 	}
 
 	/**

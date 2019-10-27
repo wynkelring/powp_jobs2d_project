@@ -1,7 +1,7 @@
 package edu.kis.powp.command.factory;
 
-import edu.kis.powp.command.DriverCommand;
-import edu.kis.powp.command.ComplexCommand;
+import edu.kis.powp.command.drivers.DriverCommand;
+import edu.kis.powp.command.drivers.ComplexCommand;
 import edu.kis.powp.command.events.OperateToCommand;
 import edu.kis.powp.command.events.SetPositionCommand;
 import edu.kis.powp.jobs2d.drivers.DriverManager;

@@ -1,6 +1,6 @@
 package edu.kis.powp.command.events;
 
-import edu.kis.powp.command.DriverCommand;
+import edu.kis.powp.command.drivers.DriverCommand;
 import edu.kis.powp.jobs2d.Job2dDriver;
 
 public class SetPositionCommand  implements DriverCommand {
