@@ -6,16 +6,16 @@ import edu.kis.powp.jobs2d.drivers.DriverManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SelectTestCommandRectOptionListener implements ActionListener {
+public class SelectTestCommandCircleOptionListener implements ActionListener {
 
 	private DriverManager driverManager;
 
-	public SelectTestCommandRectOptionListener(DriverManager driverManager) {
+	public SelectTestCommandCircleOptionListener(DriverManager driverManager) {
 		this.driverManager = driverManager;
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		FigureFactory.getRect(driverManager).execute();
+		FigureFactory.getCircle(driverManager).execute();
 	}
 }
