@@ -23,10 +23,8 @@ public class ComplexCommand implements DriverCommand {
 
     @Override
     public void execute() {
-        if(complexCommands != null) {
             for (DriverCommand command : complexCommands) {
                 command.execute();
             }
-        }
     }
 }

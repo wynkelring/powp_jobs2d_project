@@ -34,9 +34,13 @@ public class TestJobs2dPatterns {
 				DriverFeature.getDriverManager());
 		SelectTestCommandCircleOptionListener selectTestCommandcircleOptionListener = new SelectTestCommandCircleOptionListener(
 				DriverFeature.getDriverManager());
-		SelectTestCommandFiguresJoe1OptionListener selectTestCommandFiguresJoe1OptionListener = new SelectTestCommandFiguresJoe1OptionListener(
+		SelectTestFactoryFiguresJoe1OptionListener selectTestCommandFiguresJoe1OptionListener = new SelectTestFactoryFiguresJoe1OptionListener(
 				DriverFeature.getDriverManager());
-		SelectTestCommandFiguresJoe2OptionListener selectTestCommandFiguresJoe2OptionListener = new SelectTestCommandFiguresJoe2OptionListener(
+		SelectTestFactoryFiguresJoe2OptionListener selectTestCommandFiguresJoe2OptionListener = new SelectTestFactoryFiguresJoe2OptionListener(
+				DriverFeature.getDriverManager());
+		SelectTestBuilderFiguresJoe1OptionListener selectTestBuilderFiguresJoe1OptionListener = new SelectTestBuilderFiguresJoe1OptionListener(
+				DriverFeature.getDriverManager());
+		SelectTestBuilderFiguresJoe2OptionListener selectTestBuilderFiguresJoe2OptionListener = new SelectTestBuilderFiguresJoe2OptionListener(
 				DriverFeature.getDriverManager());
 
 		application.addTest("Figure Joe 1", selectTestFigureOptionListener);
@@ -44,8 +48,10 @@ public class TestJobs2dPatterns {
 		application.addTest("Figure Jane", selectTestFigureJaneOptionListener);
 		application.addTest("Command Rect", selectTestCommandRectOptionListener);
 		application.addTest("Command Circle", selectTestCommandcircleOptionListener);
-		application.addTest("Command Joe 1", selectTestCommandFiguresJoe1OptionListener);
-		application.addTest("Command Joe 2", selectTestCommandFiguresJoe2OptionListener);
+		application.addTest("Factory Joe 1", selectTestCommandFiguresJoe1OptionListener);
+		application.addTest("Factory Joe 2", selectTestCommandFiguresJoe2OptionListener);
+		application.addTest("Builder Joe 1", selectTestBuilderFiguresJoe1OptionListener);
+		application.addTest("Builder Joe 2", selectTestBuilderFiguresJoe2OptionListener);
 	}
 
 	/**
