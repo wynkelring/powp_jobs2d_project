@@ -16,13 +16,17 @@ public class ComplexCommand implements DriverCommand {
     }
 
     public void addCommand(DriverCommand command) {
-        complexCommands.add(command);
+        if(command != null) {
+            complexCommands.add(command);
+        }
     }
 
     @Override
     public void execute() {
-        for(DriverCommand command : complexCommands){
-            command.execute();
+        if(complexCommands != null) {
+            for (DriverCommand command : complexCommands) {
+                command.execute();
+            }
         }
     }
 }

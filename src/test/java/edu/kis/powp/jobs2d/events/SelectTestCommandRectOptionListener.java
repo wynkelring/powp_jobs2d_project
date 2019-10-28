@@ -1,6 +1,7 @@
 package edu.kis.powp.jobs2d.events;
 
 import edu.kis.powp.command.factory.FigureFactory;
+import edu.kis.powp.command.factory.RectFactory;
 import edu.kis.powp.jobs2d.drivers.DriverManager;
 
 import java.awt.event.ActionEvent;
@@ -16,6 +17,7 @@ public class SelectTestCommandRectOptionListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		FigureFactory.getRect(driverManager).execute();
+		FigureFactory ff = new RectFactory();
+		ff.getShape(driverManager).execute();
 	}
 }

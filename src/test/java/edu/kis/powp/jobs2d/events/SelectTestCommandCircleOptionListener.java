@@ -1,5 +1,6 @@
 package edu.kis.powp.jobs2d.events;
 
+import edu.kis.powp.command.factory.CircleFactory;
 import edu.kis.powp.command.factory.FigureFactory;
 import edu.kis.powp.jobs2d.drivers.DriverManager;
 
@@ -16,6 +17,7 @@ public class SelectTestCommandCircleOptionListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		FigureFactory.getCircle(driverManager).execute();
+		FigureFactory ff = new CircleFactory();
+		ff.getShape(driverManager).execute();
 	}
 }

@@ -1,6 +1,7 @@
 package edu.kis.powp.jobs2d.events;
 
-import edu.kis.powp.command.factory.FigureJoeFactory;
+import edu.kis.powp.command.factory.FigureFactory;
+import edu.kis.powp.command.factory.FigureJoe2Factory;
 import edu.kis.powp.jobs2d.drivers.DriverManager;
 
 import java.awt.event.ActionEvent;
@@ -16,6 +17,7 @@ public class SelectTestCommandFiguresJoe2OptionListener implements ActionListene
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		FigureJoeFactory.figureScript2(driverManager.getCurrentDriver());
+		FigureFactory ff = new FigureJoe2Factory();
+		ff.getShape(driverManager);
 	}
 }
